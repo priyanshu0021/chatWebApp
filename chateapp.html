@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/chatapp.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="page1">
+            <div class="chat-box">
+                <div class="left">
+                    <div class="left-heading">
+                        <div class="add">
+                            <h3>Active Members</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="active-member">
+
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="rigth-inner">
+                        <div class="items">
+                            <ul>
+                                <li id="clearchat">Clear chat</li>
+                                <li>Create Group</li>
+                                <li>Theame</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="field-box">
+                        <input type="text" placeholder="Type here..">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3682/3682321.png" alt="">
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2965/2965335.png" alt="" id="lodader"><input type="file" accept="images/" style="display: none;" id="image-load" onchange="sendimage(this)"></a>
+                        <img src="https://cdn-icons-png.flaticon.com/128/720/720236.png" alt="">
+                        <img class="menue" src="https://cdn-icons-png.flaticon.com/128/8345/8345327.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>

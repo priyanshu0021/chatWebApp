@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.page1{
+    background: rgb(80, 78, 78);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.chat-box{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 60vmax;
+    height: 90vmin;
+    background: mediumpurple;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    background:rgb(33, 32, 32); 
+}
+.left-heading{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.active-member{
+    height: calc(100% - 10%);
+ 
+    padding: 5px;
+}
+h3{
+    color: rgb(9,106,217);
+    font-size: 1.5vmax;
+}
+h5{
+    font-family: monospace;
+    color: rgb(227, 216, 216);
+    margin-top: 5px;
+}
+h4{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+h6{
+    font-size: 10px;
+    color: rgb(232, 227, 227);
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+.right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background:rgb(22, 21, 21); 
+}
+.right .field-box{
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(22, 21, 21);
+}
+.field-box input
+{
+    background:rgb(33, 32, 32); 
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    font-size: 1.3vmax;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    outline: none;
+    margin-left: 10px;
+    padding: 10px;
+    color: rgb(244, 242, 238);
+}
+.rigth-inner{
+    background-color: rgb(22, 21, 21);
+    color: aliceblue; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    position: relative;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    height: calc(100% - 10%);
+}
+.send-msg{
+    background: rgb(36, 35, 35);
+    display: inline-block;
+    max-width: 40%;
+    display: flex;
+    word-wrap: break-word;
+    position: relative;
+    left:50%;
+    flex-direction: column;
+    border-radius: 10px 0px 10px 10px;
+    padding:5px 10px;
+    margin-bottom: 5px;
+}
+.recive{
+    margin-top: 10px;
+    max-width: 40%;
+    background: #3f85dc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 10px;
+    padding:5px 10px;
+}
+img{
+    height: 2.2vmax;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+img::selection{
+    user-select: none;
+}
+img:nth-child(5){
+    position:absolute;
+    right: 0;
+}
+img:hover{
+ transform: translate(0,-3px);    
+}
+.items{
+    background-color: rgb(46, 42, 42);
+    width: 10vmax;
+    height: 8vmax;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.add{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.addpopup{
+    background-color: rgb(50, 49, 49);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    position: relative;
+    flex-direction: column;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) .6s;
+    justify-content: center;
+    gap: 10px;
+}
+.addpopup input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    background: rgb(34, 34, 34);
+    color: white;
+    outline: none;
+}
+.addpopup label{
+   color: white;
+}
